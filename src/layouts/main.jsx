@@ -2,7 +2,14 @@ import React from "react";
 
 const Main = () => {
     return(
-        <p>메인 화면</p>
+        <div>
+            <br />
+            <br />
+            <hr />
+            <br />
+            <br />
+            <p>메인 화면</p>
+        </div>
     );
 }
 

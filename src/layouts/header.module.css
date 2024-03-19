@@ -1,0 +1,10 @@
+.flexBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aBox > a{
+    margin: 0 7px;
+}
+.icon{
+    /* font-weight: bold; */
+}
