@@ -6,9 +6,9 @@ import { BiShoppingBag } from "react-icons/bi";
 
 const Header = () => {
     return(
-        <div>
+        <div className={styles.menuBox}>
             <div className={styles.flexBox}>
-                <a href="/">DB 손해보험 다이렉트</a>
+                <a href="/"><b>DB 손해보험 다이렉트</b></a>
                 <div className={styles.aBox}>
                     <a href="#"><b>법인</b></a>
                     <a href="#">로그인</a>
@@ -18,16 +18,16 @@ const Header = () => {
                     <IoIosSearch className={styles.icon}></IoIosSearch>
                 </div>
             </div>
-            <div>
-                <a href="#">보험가입</a>
-                <a href="#">혜택/서비스</a>
-                <a href="#">계약관리</a>
-                <a href="#">사고/보상</a>
-                <a href="#">고객지원</a>
-                <div>
+            <div className={styles.flexBox}>
+                <p className={styles.item}>보험가입</p>
+                <p className={styles.item}>혜택/서비스</p>
+                <p className={styles.item}>계약관리</p>
+                <p className={styles.item}>사고/보상</p>
+                <p className={styles.iconBox}>
+                    <p className={styles.item}>고객지원</p>
                     <BiShoppingBag />
                     <FiMenu />
-                </div>
+                </p>
             </div>
         </div>
     );

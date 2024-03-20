@@ -1,10 +1,42 @@
+*{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+.menuBox{
+    /* width: 80%; */
+    /* width: 122.8rem; */
+    width: 75rem;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding-right: 70px;
+    padding: 0 auto;
+}
 .flexBox{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.aBox{
+    display: flex;
+    margin: 10px 0;
 }
 .aBox > a{
     margin: 0 7px;
+    font-size: 13px;
 }
 .icon{
-    /* font-weight: bold; */
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+/* 두번째 menu */
+.item{
+    margin: 20px 40px 20px 25px;
+    font-size: 18px;
+}
+.iconBox{
+    display: flex;
+}
+.iconBox > svg{
+    margin: 0 10px;
 }

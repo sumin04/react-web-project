@@ -1,9 +1,12 @@
 *{
   margin: 0;
   padding: 0;
+  background-color: #f6f7fb;
 }
 svg{
   color: black;
+  font-size: 25px;
+  /* color: blue; */
 }
 a{
   color: black;
@@ -11,12 +14,11 @@ a{
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
