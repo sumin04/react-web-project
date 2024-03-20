@@ -3,7 +3,7 @@ import React from "react";
 const Main = () => {
     return(
         <div>
-            <hr />
+            {/* <hr /> */}
             <br />
             <br />
             <p>메인 화면</p>

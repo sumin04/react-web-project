@@ -4,8 +4,6 @@
     text-align: center;
 }
 .menuBox{
-    /* width: 80%; */
-    /* width: 122.8rem; */
     width: 75rem;
     background-color: aliceblue;
     margin: 0 auto;
@@ -24,19 +22,22 @@
     margin: 0 7px;
     font-size: 13px;
 }
-.icon{
+.aBox > svg{
     margin-left: 25px;
     font-size: 30px;
+    cursor: pointer;
 }
 
-/* 두번째 menu */
+/* 두번째 줄 */
 .item{
     margin: 20px 40px 20px 25px;
     font-size: 18px;
+    cursor: pointer;
 }
 .iconBox{
     display: flex;
 }
-.iconBox > svg{
+.icon{
     margin: 0 10px;
+    cursor: pointer;
 }
