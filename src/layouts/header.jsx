@@ -32,7 +32,9 @@ const Header = () => {
                 </div>
             </div>
             <hr />
-            <div>탄먀ㅓ래ㅑ버ㅐ</div>
+            <div className={styles.display}>
+                 
+            </div>
         </>
     );
 
