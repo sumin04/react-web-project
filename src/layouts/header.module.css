@@ -3,6 +3,7 @@
     align-items: center;
     text-align: center;
 }
+
 .menuBox{
     width: 75rem;
     background-color: aliceblue;
@@ -10,29 +11,48 @@
     padding-right: 70px;
     padding: 0 auto;
 }
+/* 첫번째 줄 */
 .flexBox{
     display: flex;
     justify-content: space-between;
 }
 .aBox{
     display: flex;
-    margin: 10px 0;
+    margin: 12px 0;
 }
 .aBox > a{
-    margin: 0 7px;
     font-size: 13px;
+    color: gray;
+}
+.corporate{
+    margin-right: 10px;
+}
+.line::after{
+    content: '|';
+    text-align: center;
+    padding: 0 5px;
+    color: lightgray;
 }
 .aBox > svg{
-    margin-left: 25px;
+    margin: -2px 15px 0 20px;
     font-size: 30px;
     cursor: pointer;
 }
 
 /* 두번째 줄 */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px 25px 0;
+}
 .item{
-    margin: 20px 40px 20px 25px;
-    font-size: 18px;
+    margin: 0 60px 0 5px;
+    font-size: 20px;
     cursor: pointer;
+    color: #222222;
+}
+.item:hover{
+    font-weight: bold;
 }
 .iconBox{
     display: flex;
@@ -40,4 +60,26 @@
 .icon{
     margin: 0 10px;
     cursor: pointer;
+}
+
+/* hover 부분 */
+ul, li{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    list-style: none;
+}
+.display{
+    /* width: 80rem; */
+    height: 530px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+}
+.textBox{
+    text-align: left;
+}
+.textBox > p{
+    text-align: left;
 }
