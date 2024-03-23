@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
 }
-.menu > p, span{
+.menu > div, span{
     padding: 15px 0 25px 25px;
     width: 230px;
 }
@@ -78,7 +78,6 @@ ul, li{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* display: none; */
 }
 .display > div{
     width: 200px;
@@ -89,9 +88,4 @@ ul, li{
 .textBox > p{
     text-align: left;
     font-size: 14px;
-}
-
-/* hover 되는 영역 */
-.test:hover ~.display{
-    display: block;
 }
