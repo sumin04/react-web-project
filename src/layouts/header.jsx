@@ -20,22 +20,27 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={styles.menu}>
-                    <p className={styles.item}>보험가입</p>
-                    <p className={styles.item}>혜택/서비스</p>
-                    <p className={styles.item}>계약관리</p>
-                    <p className={styles.item}>사고/보상</p>
-                    <span className={styles.iconBox}>
-                        <p className={styles.item}>고객지원</p>
-                        <a href="#"><BiShoppingBag className={styles.icon}></BiShoppingBag></a>
-                        <a href="#"><FiMenu className={styles.icon}></FiMenu></a>
+                    <p className={`${styles.item} ${styles.insuranceItem}`}>보험가입</p>
+                    <p className={`${styles.item} ${styles.service}`}>혜택/서비스</p>
+                    <p className={`${styles.item} ${styles.contract}`}>계약관리</p>
+                    <p className={`${styles.item} ${styles.accident}`}>사고/보상</p>
+
+                    <span className={styles.itemIconBox}>
+                        <p className={`${styles.item} ${styles.client}`}>고객지원</p>
+                        <div>
+                            <a href="#"><BiShoppingBag className={styles.icon}></BiShoppingBag></a>
+                            <a href="#"><FiMenu className={styles.icon}></FiMenu></a>
+                        </div>
                     </span>
+                    
                 </div>
             </div>
             <hr />
             
             {/* 호버 내용 */}
-            <div className={styles.display}>
-                {/* 보험가입 */}
+            {/* <div className={styles.display}>
+
+                보험가입
                 <div className={styles.textBox}>
                     <b>자동차</b>
                     <p>자동차 보험</p>
@@ -56,7 +61,8 @@ const Header = () => {
                     <b>이륜차</b>
                     <p>이륜차보험</p>
                 </div>
-                {/* 혜택/서비스 */}
+
+                혜택/서비스
                 <div className={styles.textBox}>
                     <b>운전자</b>
                     <p>운전자 보험</p>
@@ -67,7 +73,8 @@ const Header = () => {
                     <p>오토바이운전자보험</p>
                     <p>킥보드운전자보험</p>
                 </div>
-                {/* 계약관리 */}
+
+                계약관리
                 <div className={styles.textBox}>
                     <b>건강</b>
                     <p>종합 보험</p>
@@ -87,7 +94,8 @@ const Header = () => {
                     <p>유병자간편실손보험</p>
                     <p>유병자간편실손보험(재가입)</p>
                 </div>
-                {/* 사고/보상 */}
+
+                사고/보상
                 <div className={styles.textBox}>
                     <b>여행</b>
                     <p>해외여행보험</p>
@@ -110,7 +118,8 @@ const Header = () => {
                     <p>펫블리반려견보험</p>
                     <p>펫보험(1년)</p>
                 </div>
-                {/* 고객지원 */}
+
+                고객지원
                 <div className={styles.textBox}>
                     <b>화재</b>
                     <p>가정보장보험(화재)</p>
@@ -130,7 +139,7 @@ const Header = () => {
                     <b>전화가입</b>
                     <p>전화가입안내</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 
