@@ -75,37 +75,78 @@ ul, li{
     text-align: start;
     list-style: none;
     font-size: 13px;
-    margin: 3px 0;
+    margin: 8px 0;
 }
 li::before{
     content: '·';
     margin: 0 5px;
 }
 .display{
-    height: 530px;
-    padding-right: 80px;
+    width: 100%;
+    /* padding-right: 80px; */
+    padding: 24px 80px 30px 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     background-color: white;
     box-shadow: 0px 5px 10px -4px lightgray;
+    position: absolute;
+    left: -35px;
+}
+.gnbItem{
+    width: 200px;
+    padding: 0 25px 0 14px;
+    text-align: left;
 }
 .textBox{
-    width: 200px;
-    height: 465px;
-    /* height: 500px; */
-    padding: 0 25px 0 14px;
-    /* padding: 0 25px 0 14px; */
-    text-align: left;
+    padding-bottom: 15px;
 }
 /* 마진이 안 머겅 */
 /* Tlqkf ╰（‵□′）╯*/
-.textBox > b{
+.gnbItem > b, .textBox > b{
+    display: block;
+    text-align: left;
     font-size: 15px;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
-.textBox > p{
-    font-size: 14px;
+.gnbItem > p, .textBox > p{
+    font-size: 13px;
     margin: 10px 0;
     text-align: left;
+    display: flex;
+}
+.gnbItem > p > img{
+    width: 20px;
+    height: 20px;
+    /* grey */
+    filter: invert(60%) sepia(13%) saturate(356%) hue-rotate(172deg) brightness(93%) contrast(91%);
+    /* 내가 조아하는 파랑 */
+    /* filter: invert(41%) sepia(93%) saturate(373%) hue-rotate(171deg) brightness(91%) contrast(95%);     */
+}
+
+/* 혜택/서비스 > 고객지원 박스 */
+.grayBox{
+    /* display: flex; */
+    /* width: 200px; */
+    /* height: 70px; */
+    /* background-color: #f6f7fb; */
+    background-color: rgb(191, 223, 243);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.btmItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0;
+}
+.btmItem > b, .icon1 > p{
+    display: block;
+    font-size: 12px;
+}
+.icon1{
+    display: flex;
+}
+.ICON{
+    font-size: 17px;
+    padding-right: 5px;
 }
