@@ -3,10 +3,14 @@
     align-items: center;
     text-align: center;
 }
-
-.menuBox{
+.headerBox{
     background-color: #f6f7fb;
+    border-bottom: 1px solid lightgray;
+}
+.menuBox{
+    width: 75rem;
     padding: 0 170px 0 80px;
+    margin: 0 auto;
 }
 /* 첫번째 줄 */
 .flexBox{
@@ -71,6 +75,11 @@ ul, li{
     text-align: start;
     list-style: none;
     font-size: 13px;
+    margin: 3px 0;
+}
+li::before{
+    content: '·';
+    margin: 0 5px;
 }
 .display{
     height: 530px;
@@ -78,14 +87,25 @@ ul, li{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    background-color: white;
+    box-shadow: 0px 5px 10px -4px lightgray;
 }
-.display > div{
+.textBox{
     width: 200px;
-    padding: 20px 25px 0  14px;
     height: 465px;
+    /* height: 500px; */
+    padding: 0 25px 0 14px;
+    /* padding: 0 25px 0 14px; */
     text-align: left;
+}
+/* 마진이 안 머겅 */
+/* Tlqkf ╰（‵□′）╯*/
+.textBox > b{
+    font-size: 15px;
+    margin-top: 10px;
 }
 .textBox > p{
-    text-align: left;
     font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
 }

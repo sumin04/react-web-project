@@ -13,7 +13,7 @@ import img from "../img/imgModule";
 
 const Header = () => {
     const [items, setItems] = useState({
-        item1 : false,
+        item1 : true,
         item2 : false,
         item3 : false,
         item4 : false,
@@ -39,7 +39,7 @@ const Header = () => {
 
 
     return(
-        <div>
+        <div className={styles.headerBox}>
             <div className={styles.menuBox}>
                 <div className={styles.flexBox}>
                     <a href="/"><b>DB 손해보험 다이렉트</b></a>
@@ -92,7 +92,7 @@ const Header = () => {
                     
                 </div>
             </div>
-            <hr />
+            {/* <hr /> */}
             
             {/* 보험가입 */}
             {items.item1 && <div className={styles.display}>
@@ -133,8 +133,6 @@ const Header = () => {
                     <b>건강</b>
                     <p>종합 보험</p>
                     <p>암보험</p>
-                    <p>간편건강보험</p>
-                    <p>유병자간편건강보험</p>
                     <p>치아보험</p>
 
                     <b>자녀</b>
