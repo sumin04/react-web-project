@@ -9,7 +9,6 @@
 }
 .menuBox{
     width: 75rem;
-    height: 121px;
     padding: 0 170px 0 80px;
     margin: 0 auto;
     /* border-bottom: 1px solid lightgray; */
@@ -85,8 +84,8 @@ li::before{
 }
 .display{
     width: 100%;
-    padding: 24px 35px 30px 0;
-    /* padding: 24px 80px 30px 0; */
+    /* padding-right: 80px; */
+    padding: 24px 80px 30px 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -94,7 +93,6 @@ li::before{
     box-shadow: 0px 5px 10px -4px lightgray;
     position: absolute;
     left: -35px;
-    top: 122px;
 }
 .gnbItem{
     width: 200px;
