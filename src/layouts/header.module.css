@@ -5,7 +5,7 @@
 }
 .headerBox{
     background-color: #f6f7fb;
-    /* border-bottom: 1px solid lightgray; */
+    border-bottom: 1px solid lightgray;
 }
 .menuBox{
     width: 75rem;

@@ -9,7 +9,7 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import { AiFillAlert } from "react-icons/ai";
 import { SiAiqfome } from "react-icons/si";
 import { VscGraphLine } from "react-icons/vsc";
-import img from "../../img/imgModule";
+import img from "../img/imgModule";
 
 const Header = () => {
     // 메뉴 바

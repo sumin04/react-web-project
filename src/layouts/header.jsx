@@ -16,7 +16,7 @@ const Header = () => {
         menu1 : false,
         menu2 : false,
         menu3 : false,
-        menu4 : true,
+        menu4 : false,
         menu5 : false,
     });
 
@@ -58,7 +58,7 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('menu1')}
                         onMouseLeave={() => handleMouseLeave('menu1')}
                     >
-                        보험가입
+                        <>보험가입</>
                         {menus.menu1 && <div className={styles.display}>
                             {/* 보험가입 */}
                             <div className={styles.gnbItem}>
@@ -185,7 +185,7 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('menu2')}
                         onMouseLeave={() => handleMouseLeave('menu2')}
                     >
-                        혜택/서비스
+                        <>혜택/서비스</>
                         {menus.menu2 && <div className={styles.display}>
                             {/* 보험가입 */}
                             <div className={styles.gnbItem}>
@@ -245,7 +245,7 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('menu3')}
                         onMouseLeave={() => handleMouseLeave('menu3')}
                     >
-                        계약관리
+                        <>계약관리</>
                         {menus.menu3 && <div className={styles.display}>
                             {/* 보험가입 */}
                             <div className={styles.gnbItem}>
@@ -293,7 +293,7 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('menu4')}
                         onMouseLeave={() => handleMouseLeave('menu4')}
                     >
-                        사고/보상
+                        <>사고/보상</>
                         {menus.menu4 && <div className={styles.display}>
                             {/* 보험가입 */}
                             <div className={styles.gnbItem}>
@@ -350,12 +350,12 @@ const Header = () => {
                     </div>
 
                     {/* 고객지원 */}
-                    <span className={styles.itemIconBox}>
+                    <div className={styles.itemIconBox}>
                         <div className={styles.item}
                             onMouseEnter={() => handleMouseEnter('menu5')}
                             onMouseLeave={() => handleMouseLeave('menu5')}
                         >
-                            고객지원
+                            <>고객지원</>
                             {menus.menu5 && <div className={styles.display}>
                                 {/* 보험가입 */}
                                 <div className={styles.gnbItem}>
@@ -398,7 +398,7 @@ const Header = () => {
                             <a href="#"><BiShoppingBag className={styles.icon}></BiShoppingBag></a>
                             <a href="#"><FiMenu className={styles.icon}></FiMenu></a>
                         </div>
-                    </span>
+                    </div>
                 </div>
             </div>
         </div>
