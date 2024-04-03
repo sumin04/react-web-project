@@ -325,25 +325,31 @@ const Header = () => {
                             </div>
                             {/* 고객지원 */}
                             <div className={styles.gnbItem}>
-                                <div>
-                                    <div>
-                                        <IoIosCall />
-                                        <p>인터넷고객지원센터</p>
-                                        <b>1600-0100</b>    
+                                <div className={styles.fnbItem}>
+                                    <div className={styles.grayBox2}>
+                                        <div className={styles.btnList}>
+                                            <div className={styles.btnItemBox}>
+                                                <IoIosCall />
+                                                <p>인터넷고객지원센터</p>
+                                            </div>
+                                            <b>1600-0100</b>    
+                                        </div>
+                                        <div className={`${styles.btnList} ${styles.timeBox}`}>
+                                            <p>평일 09:00~18:00</p>
+                                            <p>토요일 09:00~13:00</p>
+                                        </div>
+                                        <div className={styles.btnList}>
+                                            <div className={styles.btnItemBox}>
+                                                <AiFillAlert />
+                                                <p>긴급출동/사고접수</p>
+                                            </div>
+                                            <b>1566-0015</b>    
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p>평일 09:00~18:00</p>
-                                        <p>토요일 09:00~13:00</p>
+                                    <div className={`${styles.btnList} ${styles.iconTxB}`}>
+                                        <p><SiAiqfome />챗봇상담</p>
+                                        <p><VscGraphLine />내보험 보장분석</p>
                                     </div>
-                                    <div>
-                                        <AiFillAlert />
-                                        <p>긴급출동/사고접수</p>
-                                        <b>1566-0015</b>    
-                                    </div>
-                                </div>
-                                <div>
-                                    <p><SiAiqfome />챗봇상담</p>
-                                    <p><VscGraphLine />내보험보장분석</p>
                                 </div>
                             </div>
                         </div>}

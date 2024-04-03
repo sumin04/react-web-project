@@ -5,14 +5,14 @@
 }
 .headerBox{
     background-color: #f6f7fb;
-    border-bottom: 1px solid lightgray;
+    /* background-color: #264ff6; */
+    /* border-bottom: 1px solid lightgray; */
 }
 .menuBox{
     width: 75rem;
-    height: 121px;
+    height: 122px;
     padding: 0 170px 0 80px;
     margin: 0 auto;
-    /* border-bottom: 1px solid lightgray; */
 }
 /* 첫번째 줄 */
 .flexBox{
@@ -83,6 +83,7 @@ li::before{
     content: '·';
     margin: 0 5px;
 }
+/* 아 다음부턴 제발 gird 사용하기....!!ㅠㅠ */
 .display{
     width: 100%;
     padding: 24px 35px 30px 0;
@@ -91,21 +92,24 @@ li::before{
     align-items: flex-start;
     justify-content: center;
     background-color: white;
+    /* background-color: black; */
     box-shadow: 0px 5px 10px -4px lightgray;
     position: absolute;
     left: -35px;
     top: 122px;
 }
 .gnbItem{
-    width: 200px;
-    padding: 0 25px 0 14px;
+    /* width: 220px; */
+    width: 225px;
+    /* padding: 0 14px 0 0; */
+    padding: 0 0 0 14px;
     text-align: left;
 }
 .textBox{
     padding-bottom: 15px;
 }
 /* 마진이 안 머겅 */
-/* Tlqkf ╰（‵□′）╯*/
+/* ╰（‵□′）╯*/
 .gnbItem > b, .textBox > b{
     display: block;
     text-align: left;
@@ -123,19 +127,17 @@ li::before{
     height: 20px;
     /* grey */
     filter: invert(60%) sepia(13%) saturate(356%) hue-rotate(172deg) brightness(93%) contrast(91%);
-    /* 내가 조아하는 파랑 */
-    /* filter: invert(41%) sepia(93%) saturate(373%) hue-rotate(171deg) brightness(91%) contrast(95%);     */
 }
 
 /* 혜택/서비스 > 고객지원 박스 */
 .grayBox{
-    /* display: flex; */
-    /* width: 200px; */
-    /* height: 70px; */
-    /* background-color: #f6f7fb; */
-    background-color: rgb(191, 223, 243);
-    border-radius: 10px;
-    padding: 5px 20px;
+    width: 210px;
+    background-color: #eef2f8;
+    border-radius: 5px;
+    padding: 7px 15px;
+    /* margin-right: 20px; */
+    position: relative;
+    right: 10px;
 }
 .btmItem{
     display: flex;
@@ -150,6 +152,64 @@ li::before{
     display: flex;
 }
 .ICON{
-    font-size: 17px;
+    font-size: 15px;
     padding-right: 5px;
+}
+
+/* 사고/보상 > 고객지원 박스 */
+.fnbItem{
+    position: relative;
+    right: 19px;
+    /* position: absolute;
+    right: 590px; */
+}
+.grayBox2{
+    width: 195px;
+    /* width: 200px; */
+    background-color: #eef2f8;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+.btnList{
+    display: flex;
+    justify-content: space-between;
+}
+.btnList > b, p, .btnItemBox > p{
+    display: block;
+    font-size: 11px;
+}
+.btnItemBox{
+    display: flex;
+}
+.timeBox{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: gray;
+    margin-left: 23px;
+    font-weight: lighter;
+}
+.timeBox > p{
+    margin: 1px 0;
+}
+.btnItemBox > p{
+    margin: 10px 0;
+}
+.btnItemBox > svg{
+    width: 16px;
+    margin-right: 5px;
+}
+.iconTxB{
+    display: flex;
+    justify-content: space-between;
+}
+.iconTxB > p{
+    display: flex;
+    align-items: center;
+    /* margin-left: 20px; */
+    margin: 15px 0 15px 14px;
+}
+.iconTxB > p > svg{
+    width: 19px;
+    margin-right: 7px;
 }
