@@ -9,7 +9,7 @@
     padding: 0 12PX;
 }
 .footerIogo{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: left;
 }
 .footerInfo{
@@ -32,6 +32,7 @@
     text-align: start;
     float: left;
     font-size: 13px;
+    margin-bottom: 5px;
 }
 .before::before{
     content: "|";
@@ -64,6 +65,7 @@
     "body body"
     "footer footer";
     gap: 8px 4px;
+    align-items: flex-start;
 }
 .telArea > p{
     font-size: 12px;
@@ -71,4 +73,6 @@
 .telArea > b{
     font-size: 13px;
     margin-left: 3px;
+    position: relative;
+    bottom: 2px;
 }
