@@ -66,7 +66,7 @@ const Header = () => {
                                     <b>자동차</b>
                                     <p>자동차 보험</p>
                                     <p className={styles.none}>자동차보험할인특약안내</p>
-                                    <ul>
+                                    <ul className={styles.liList}>
                                         <li>주행거리할인특약</li>
                                         <li>안전운전할인특약</li>
                                         <li>Baby in car 할인특약</li>

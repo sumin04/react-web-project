@@ -5,7 +5,6 @@
 }
 .headerBox{
     background-color: #f6f7fb;
-    /* background-color: #264ff6; */
     /* border-bottom: 1px solid lightgray; */
 }
 .menuBox{
@@ -71,18 +70,19 @@
 }
 
 /* hover 내용 부분 */
-ul, li{
+.liList > li{
     margin: 0;
     padding: 0;
     text-align: start;
     list-style: none;
     font-size: 13px;
-    /* margin: 4px 0; */
     padding: 4px 0;
+    /* color: #808080; */
+    color: rgb(98, 116, 160);
 }
 /* hover시 초록색 */
-li:hover{
-    background-color: #20bf61;
+.liList > li:hover{
+    background-color: rgb(13, 41, 82);
     color: white;
     border-radius: 3px;
     font-weight: bold;
@@ -121,7 +121,7 @@ li:hover{
     padding-left: 4px;
 }
 
-li::before{
+.liList > li::before{
     content: '·';
     margin: 0 5px;
 }
@@ -129,22 +129,17 @@ li::before{
 .display{
     width: 100%;
     padding: 24px 35px 30px 0;
-    /* padding: 24px 80px 30px 0; */
     display: flex;
     align-items: flex-start;
     justify-content: center;
     background-color: white;
-    /* background-color: black; */
     box-shadow: 0px 5px 20px -4px lightgray;
     position: absolute;
     left: -35px;
     top: 122px;
-    /* border-top: 1px solid lightgray; */
 }
 .gnbItem{
-    /* width: 220px; */
     width: 225px;
-    /* padding: 0 14px 0 0; */
     padding: 0 0 0 14px;
     text-align: left;
 }
@@ -171,7 +166,6 @@ li::before{
 .gnbItem > p > img{
     width: 20px;
     height: 20px;
-    /* grey */
     filter: invert(60%) sepia(13%) saturate(356%) hue-rotate(172deg) brightness(93%) contrast(91%);
 }
 
@@ -181,7 +175,6 @@ li::before{
     background-color: #eef2f8;
     border-radius: 5px;
     padding: 7px 15px;
-    /* margin-right: 20px; */
     position: relative;
     right: 10px;
 }
@@ -206,12 +199,9 @@ li::before{
 .fnbItem{
     position: relative;
     right: 19px;
-    /* position: absolute;
-    right: 590px; */
 }
 .grayBox2{
     width: 195px;
-    /* width: 200px; */
     background-color: #eef2f8;
     border-radius: 5px;
     padding: 12px 20px;
@@ -252,7 +242,6 @@ li::before{
 .iconTxB > p{
     display: flex;
     align-items: center;
-    /* margin-left: 20px; */
     margin: 15px 0 15px 14px;
 }
 .iconTxB > p > svg{
