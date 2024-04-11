@@ -45,12 +45,14 @@
 .linkArea{
     display: flex;
     gap: 52px;
+    align-items: flex-start;
 }
 .linkColumn > p, .linkColumn > b{
     text-align: left;
     font-size: 12px;
     margin-bottom: 8px;
     display: block;
+    cursor: pointer;
 }
 
 /* 세 번째 박스 */
@@ -61,7 +63,7 @@
     "header header"
     "body body"
     "footer footer";
-    gap: .8px .4px;
+    gap: 8px 4px;
 }
 .telArea > p{
     font-size: 12px;
