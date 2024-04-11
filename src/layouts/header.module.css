@@ -77,8 +77,50 @@ ul, li{
     text-align: start;
     list-style: none;
     font-size: 13px;
-    margin: 8px 0;
+    /* margin: 4px 0; */
+    padding: 4px 0;
 }
+/* hover시 초록색 */
+li:hover{
+    background-color: #20bf61;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+.gnbItem > p:hover{
+    background-color: #20bf61;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+.textBox > p:hover:not(.none){
+    background-color: #20bf61;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+/* 모바일 mobile 부분 */
+.mobileHover:hover{
+    background-color: #20bf61;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding-left: 4px;
+    .mobile{display: block;}
+}
+.mobile{
+    width: 50px;
+    display: none;
+    background-color: #20bf61;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
 li::before{
     content: '·';
     margin: 0 5px;
@@ -93,10 +135,11 @@ li::before{
     justify-content: center;
     background-color: white;
     /* background-color: black; */
-    box-shadow: 0px 5px 10px -4px lightgray;
+    box-shadow: 0px 5px 20px -4px lightgray;
     position: absolute;
     left: -35px;
     top: 122px;
+    /* border-top: 1px solid lightgray; */
 }
 .gnbItem{
     /* width: 220px; */
@@ -108,8 +151,6 @@ li::before{
 .textBox{
     padding-bottom: 15px;
 }
-/* 마진이 안 머겅 */
-/* ╰（‵□′）╯*/
 .gnbItem > b, .textBox > b{
     display: block;
     text-align: left;
@@ -118,9 +159,14 @@ li::before{
 }
 .gnbItem > p, .textBox > p{
     font-size: 13px;
-    margin: 10px 0;
+    padding: 5px 0;
     text-align: left;
     display: flex;
+}
+.mobileHover > p{
+    font-size: 13px;
+    padding: 5px 0;
+    text-align: left;
 }
 .gnbItem > p > img{
     width: 20px;

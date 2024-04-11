@@ -65,7 +65,7 @@ const Header = () => {
                                 <div className={styles.textBox}>
                                     <b>자동차</b>
                                     <p>자동차 보험</p>
-                                    <p>자동차보험할인특약안내</p>
+                                    <p className={styles.none}>자동차보험할인특약안내</p>
                                     <ul>
                                         <li>주행거리할인특약</li>
                                         <li>안전운전할인특약</li>
@@ -76,8 +76,14 @@ const Header = () => {
                                         <li>커넥티드카 안전운전할인특약</li>
                                         <li>프로미하트나눔특약</li>
                                     </ul>
-                                    <p>원데이자동차보험</p>
-                                    <p>자동차 고장수리비용보험</p>
+                                    <div className={styles.mobileHover}>
+                                        <p>원데이자동차보험</p>
+                                        <p className={styles.mobile}>[모바일]</p>
+                                    </div>
+                                    <div className={styles.mobileHover}>
+                                        <p>자동차 고장수리비용보험</p>
+                                        <p className={styles.mobile}>[모바일]</p>
+                                    </div>
                                 </div>
 
                                 <div className={styles.textBox}>
@@ -90,7 +96,10 @@ const Header = () => {
                                 <div className={styles.textBox}>
                                     <b>운전자</b>
                                     <p>운전자 보험</p>
-                                    <p>안전운전UBI운전자보험</p>
+                                    <div className={styles.mobileHover}>
+                                        <p>안전운전UBI운전자보험</p>
+                                        <p className={styles.mobile}>[모바일]</p>
+                                    </div>
                                     <p>운전자보험(1년이내)</p>
                                 </div>
 
@@ -144,7 +153,10 @@ const Header = () => {
                                 <div className={styles.textBox}>
                                     <b>반려동물</b>
                                     <p>펫블리반려견보험</p>
-                                    <p>펫보험(1년)</p>
+                                    <div className={styles.mobileHover}>
+                                        <p>펫보험(1년)</p>
+                                        <p className={styles.mobile}>[모바일]</p>
+                                    </div>
                                 </div>
                             </div>
                             {/* 고객지원 */}
@@ -267,7 +279,10 @@ const Header = () => {
                                 <b>취소/철회/해지</b>
                                 <p>개시전취소/청약철회</p>
                                 <p>해지안내</p>
-                                <p>원데이자동차보험해지신청</p>
+                                <div className={styles.mobileHover}>
+                                    <p>원데이자동차보험해지신청</p>
+                                    <p className={styles.mobile}>[모바일]</p>
+                                </div>
                             </div>
                             {/* 사고/보상 */}
                             <div className={styles.gnbItem}>
