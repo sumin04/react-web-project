@@ -370,6 +370,7 @@ const Header = () => {
                         </div>}
                     </div>
 
+                    {/* hover 안 됨 수정해야함. */}
                     {/* 고객지원 */}
                     <div className={styles.itemIconBox}>
                         <div className={styles.item}

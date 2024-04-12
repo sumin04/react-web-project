@@ -1,0 +1,27 @@
+.contentInner{
+    display: flex;
+}
+.mainNav{
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+.mainNav > p{
+    width: 250px;
+    height: 40px;
+    background-color: lightcoral;
+    border-bottom: 5px solid white;
+}
+/* .test{
+    margin-top: 122px;
+    margin-left: 300px;
+} */
+.advertisementBanner{
+    display: flex;
+}
+.iconList{
+    display: flex;
+}
+/* .textLi > div > p{
+    height: 120px;
+} */
