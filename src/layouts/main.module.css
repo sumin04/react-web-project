@@ -2,15 +2,17 @@
     display: flex;
 }
 .mainNav{
+    height: 100%;
     position: sticky;
-    top: 0;
+    top: 105px;
     z-index: 0;
+    background-color: #d0e0f2;
+    padding: 55px 50px 40px 95px;
+    overflow: auto;
 }
 .mainNav > p{
-    width: 250px;
-    height: 40px;
-    background-color: lightcoral;
-    border-bottom: 5px solid white;
+    font-size: 15px;
+    padding: 10px 0;
 }
 /* .test{
     margin-top: 122px;
