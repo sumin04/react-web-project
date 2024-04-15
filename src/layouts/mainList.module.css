@@ -1,0 +1,24 @@
+.listBox{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list > a{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.link{
+    width: 96px;
+    height: 96px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    border: 2px solid rgb(198, 223, 255);
+    box-sizing: border-box;
+}

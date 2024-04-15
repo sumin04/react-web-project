@@ -6,7 +6,8 @@
 .headerBox{
     width: 100%;
     background-color: #f6f7fb;
-    /* border-bottom: 1px solid lightgray; */
+    
+    border-bottom: 1px solid #d0e0f2;
     position: sticky;
     top: 0;
     z-index: 1;
