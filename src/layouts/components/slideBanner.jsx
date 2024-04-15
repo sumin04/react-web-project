@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../img/imgModule";
-import styles from "../../layouts/main.module.css"
+import styles from "./slideBanner.module.css"
 
 const SlideBanner = () => {
     return(
