@@ -1,4 +1,24 @@
-.slideBanner > img{
+/* .slideBanner > img{
     width: 360px;
     height: 88px;
+} */
+
+.show {
+    display: flex;
+    width: 360px; 
+    height: 85px;
+    /* overflow: hidden; */
+}
+  
+.compartment {
+    flex-shrink: 0; /*이 구역안에 생기는 영역들이 공간을 분배하여 가지지 않도록 적용*/
+    font-size: 20px;
+    text-align: center;
+    /* transform: translateX(-1100px);
+    transition: all 0.4s ease-in-out; */
+}
+
+.img{
+    width: 360px; 
+    height: 85px;
 }
