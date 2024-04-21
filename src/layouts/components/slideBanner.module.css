@@ -3,22 +3,42 @@
     height: 88px;
 } */
 
-.show {
+.show{
     display: flex;
     width: 360px; 
     height: 85px;
+    /* margin-right: 21px; */
+    margin-right: 25px;
     /* overflow: hidden; */
 }
   
-.compartment {
+.compartment{
+    display: flex;
     flex-shrink: 0; /*이 구역안에 생기는 영역들이 공간을 분배하여 가지지 않도록 적용*/
     font-size: 20px;
     text-align: center;
-    /* transform: translateX(-1100px);
-    transition: all 0.4s ease-in-out; */
+}
+
+/* < > 꺽새 디자인 */
+.swiperButton{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    position: relative;
+    top: 26px;
+}
+.swiperButtonPrev{
+    left: 32px;
+}
+.swiperButtonNext{
+    right: 32px;
 }
 
 .img{
     width: 360px; 
     height: 85px;
+    border-radius: 5px;
 }
