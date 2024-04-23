@@ -28,7 +28,8 @@
     border: none;
     color: white;
     position: relative;
-    top: 26px;
+    /* top: 26px; */
+    bottom: 35px;
 }
 .swiperButtonPrev{
     left: 32px;
