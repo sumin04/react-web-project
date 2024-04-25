@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import img from "../../img/imgModule";
 import styles from "./slideBanner.module.css"
 import { useState, useEffect } from 'react';
@@ -6,8 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 // import { motion } from "framer-motion"
 import styled from "styled-components";
 import { wrap } from "popmotion";
-
-
 
 const SlideBanner = () => {
     const trainCompartment = [
@@ -25,10 +23,10 @@ const SlideBanner = () => {
     // `;
     
     const boxVariants = {
-        entry: (back) => ({ opacity: 0, x: back ? 50 :-50}), // 초기 상태
+        entry: (back) => ({opacity: 0, x: back ? -50 :50,}), // 초기 상태
         // hidden: { opacity: 0, x: -100 }, // 초기 상태
         visible: { opacity: 1, x: 0, scale: 1,}, // 애니메이션 중간 상태
-        exit: (back) => ({ opacity: 0, x:back? -50: 50, scale: 1,}),  // 컴포넌트가 제거될 때 상태
+        exit: (back) => ({opacity: 0, x: back ? 50: -50, scale: 1,}),  // 컴포넌트가 제거될 때 상태
         // exit: { opacity: 0, x: 100 },  // 컴포넌트가 제거될 때 상태
         
         // entry: (back) => ({
@@ -114,14 +112,14 @@ const SlideBanner = () => {
 
     const prevSlide = () => {
         setBack(true);
-        console.log('back RKQT:',back)
+        console.log('back RKQT:', back)
         setVisible((prev) => 
-        prev === trainCompartment.length -1 ? trainCompartment.length : prev - 1,
-    );
+            prev === trainCompartment.length -1 ? trainCompartment.length : prev - 1,
+        );
     };
     const nextSlide = () => {
         setBack(false);
-        console.log('back dddd:',back)
+        console.log('back dddd:', back)
         setVisible((prev) =>
             prev === trainCompartment.length -1 ? trainCompartment.length : prev + 1
         );
@@ -131,43 +129,73 @@ const SlideBanner = () => {
     // wrap(min:number, max:number, v:number)s
     const Index = wrap(0, trainCompartment.length, visible);
 
+    // 자동 재생 기능
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [setVisible]);
+
+    // 멈춤 기능
+    const stop = useCallback(() => {
+        clearInterval(trainCompartment.length);
+        trainCompartment.length = null;
+        console.log("stop : ", trainCompartment.length);
+    },[]);
+    
+    // 재생 기능
+    const play = useCallback(() => {
+        
+    },[]);
 
     return (
         <div className={styles.train}>
-            <div>
-                <button
-                className={`${styles.swiperButtonPrev} 
-                            ${styles.swiperButton}`}
-                onClick={prevSlide}
-                >
-                    {"〈"}
-                </button>
+            <div className={styles.compartment}>
+                <span className={styles.swiperBtnWrapper}>
+                    <small>{Index+1}/2</small>
+                    <div>
+                        <button onClick={stop}>멈춤</button>
+                        <button onClick={play}>재생</button>
+                    </div>
+                </span>
 
-                <AnimatePresence custom={back}>
-                    <motion.div>
-                        <motion.img className={styles.img}
-                                // src={img.eventBanner}
-                                src={trainCompartment[Index]}
-                                // custom={true}
-                                custom={back}
-                                // custom={false}
-                                variants={boxVariants}
-                                // initial="hidden"
-                                initial="entry"
-                                animate="visible"
-                                exit="exit"
-                                key={visible}
-                            />
-                    </motion.div>
-                </AnimatePresence>
-
-                <button
-                    className={`${styles.swiperButtonNext} 
+                <div className={styles.compartment}>
+                    <button
+                        className={`${styles.swiperButtonPrev} 
                                     ${styles.swiperButton}`}
-                    onClick={nextSlide}
-                >
-                    {"〉"}
-                </button>
+                        onClick={prevSlide}
+                    >
+                        {"〈"}
+                    </button>
+                    
+                    <AnimatePresence custom={back} className={styles.animate}>
+                        <motion.div>
+                            <motion.img className={styles.img}
+                                    // src={img.eventBanner}
+                                    src={trainCompartment[Index]}
+                                    // custom={true}
+                                    custom={back}
+                                    // custom={false}
+                                    variants={boxVariants}
+                                    // initial="hidden"
+                                    initial="entry"
+                                    animate="visible"
+                                    exit="exit"
+                                    key={visible}
+                                />
+                        </motion.div>
+                    </AnimatePresence>
+
+                    <button
+                        className={`${styles.swiperButtonNext} 
+                        ${styles.swiperButton}`}
+                        onClick={nextSlide}
+                        >
+                        {"〉"}
+                    </button>
+                </div>
             </div>
             {/* <Wrapper>
                 <SlideWrap>

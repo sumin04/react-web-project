@@ -3,21 +3,20 @@
     height: 88px;
 } */
 
-.show{
+/* .show{
     display: flex;
     width: 360px; 
     height: 85px;
-    /* margin-right: 21px; */
     margin-right: 25px;
-    /* overflow: hidden; */
-}
+} */
   
 .compartment{
     display: flex;
     flex-shrink: 0; /*이 구역안에 생기는 영역들이 공간을 분배하여 가지지 않도록 적용*/
-    font-size: 20px;
-    text-align: center;
 }
+/* .compartment::before{
+    content: "12";
+} */
 
 /* < > 꺽새 디자인 */
 .swiperButton{
@@ -28,8 +27,9 @@
     border: none;
     color: white;
     position: relative;
-    /* top: 26px; */
-    bottom: 35px;
+    top: 30px;
+    z-index: 1;
+    /* bottom: 35px; */
 }
 .swiperButtonPrev{
     left: 32px;
@@ -38,6 +38,8 @@
     right: 32px;
 }
 
+/* 슬라이드 애니메이션 디자인 */
+/* slide animate */
 .img{
     width: 360px; 
     height: 85px;
