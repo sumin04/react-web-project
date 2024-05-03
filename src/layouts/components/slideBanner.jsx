@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useCallback, useRef } from "react";
+=======
+import React, { useCallback } from "react";
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
 import img from "../../img/imgModule";
 import styles from "./slideBanner.module.css"
 import { useState, useEffect } from 'react';
@@ -107,7 +111,12 @@ const SlideBanner = () => {
 
     const [visible, setVisible] = useState(0);
     const [back, setBack] = useState(false);
+<<<<<<< HEAD
     const autoStop = useRef();
+=======
+    // 박스마다 이미지 적용
+    // const imageIndex = wrap(0, trainCompartment.length, visible);
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
 
     const prevSlide = () => {
         setBack(true);
@@ -127,6 +136,7 @@ const SlideBanner = () => {
     // wrap은 정의된 숫자 범위를 넘어서면 숫자를 다시 처음 상태
     // wrap(min:number, max:number, v:number)s
     const Index = wrap(0, trainCompartment.length, visible);
+<<<<<<< HEAD
     
     // 자동 재생 기능
     useEffect(() => {
@@ -157,6 +167,29 @@ const SlideBanner = () => {
         },2000);
         console.log("play : ", autoStop.current);
     };
+=======
+
+    // 자동 재생 기능
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [setVisible]);
+
+    // 멈춤 기능
+    const stop = useCallback(() => {
+        clearInterval(trainCompartment.length);
+        trainCompartment.length = null;
+        console.log("stop : ", trainCompartment.length);
+    },[]);
+    
+    // 재생 기능
+    const play = useCallback(() => {
+        
+    },[]);
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
 
     return (
         <div className={styles.train}>

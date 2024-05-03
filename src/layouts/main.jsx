@@ -3,7 +3,10 @@ import styles from "./main.module.css"
 // import img from "../img/imgModule";
 import ListItem from "./components/mainList-Item"
 import SlideBanner from "./components/slideBanner"
+<<<<<<< HEAD
 import MainContents from "./components/mainContent";
+=======
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
 // import { text } from "@fortawesome/fontawesome-svg-core";
 
 const Main = () => {
@@ -39,9 +42,13 @@ const Main = () => {
                         {/* 리스트 아이템 */}
                         <ListItem />
                     </div>
+<<<<<<< HEAD
                     <MainContents />
                     <MainContents />
                     {/* <div>
+=======
+                    <div>
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
                         <h1>자동차</h1>
                         <div>
                             <div>
@@ -84,7 +91,11 @@ const Main = () => {
                         <p>qwer</p>
                         <p>qwer</p>
                         <p>qwer</p>
+<<<<<<< HEAD
                     </div> */}
+=======
+                    </div>
+>>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
                 </div>
             </div>
         </main>
