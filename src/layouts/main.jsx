@@ -1,13 +1,8 @@
 import React from "react";
 import styles from "./main.module.css"
-// import img from "../img/imgModule";
-import ListItem from "./components/mainList-Item"
 import SlideBanner from "./components/slideBanner"
-<<<<<<< HEAD
+import ListItem from "./components/mainList-Item"
 import MainContents from "./components/mainContent";
-=======
->>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
-// import { text } from "@fortawesome/fontawesome-svg-core";
 
 const Main = () => {
     return(
@@ -42,60 +37,9 @@ const Main = () => {
                         {/* 리스트 아이템 */}
                         <ListItem />
                     </div>
-<<<<<<< HEAD
+
                     <MainContents />
-                    <MainContents />
-                    {/* <div>
-=======
-                    <div>
->>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
-                        <h1>자동차</h1>
-                        <div>
-                            <div>
-                                <strong>자동차보험</strong>
-                                <p>자사 오프라인 대비<br/>
-                                인터넷가입 평균 18.1% 저렴해요!<br/>
-                                (24.2.15 보험시기 이전 17.7%)</p>
-                                <button>계산/가입</button>
-                                <button>갱신/재가입</button>
-                            </div>
-                            <div>
-                                <strong>이륜차보험</strong>
-                                <p>자사 오프라인 대비<br/>
-                                평균 19.8% 저렴</p>
-                            </div>
-                            <div>
-                                <strong>자동차보험(법인)</strong>
-                                <p>자사 오프라인 대비<br/>
-                                평균 18.1% 저렴<br/>
-                                (24.2.15 보험시기  이전 17.7%)</p>
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-                        <p>qwer</p>
-<<<<<<< HEAD
-                    </div> */}
-=======
-                    </div>
->>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
+                    {/* <MainContents /> */}
                 </div>
             </div>
         </main>

@@ -1,6 +1,5 @@
 .main{
     background-color: #f6f7fb;
-    /* border-top: 1px solid #d0e0f2; */
     padding-right: 80px;
 }
 .contentInner{
@@ -15,8 +14,6 @@
     top: 105px;
     z-index: 0;
     padding: 40px 50px 20px 10px;
-    /* background-color: #d0e0f2; */
-    /* overflow: auto; */
 }
 .mainNav > p{
     font-size: 15px;
@@ -40,10 +37,6 @@
 .tit > h1 > strong{
     color: #222222;
 }
-
-
-
-
 .iconList{
     display: flex;
 }

@@ -21,7 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 
 # 복붙
 # Created by https://www.toptal.com/developers/gitignore/api/react
@@ -44,5 +43,3 @@ thumb
 sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/react
-=======
->>>>>>> 5cf91da0c7e285b4e2a92e4cbd9da1b5e3ef050d
