@@ -6,8 +6,7 @@ import img from "../../img/imgModule";
 const MainContents = () => {
     return(
         <div className={styles.productCar}>
-            <h1>깃허브 주소 잘못 연결됨</h1>
-            <h2>다음에 고치기ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ</h2>
+            <h2>test</h2>
 
             <div className={styles.mainTitle}>
                 <h2 className={styles.tit}>자동차</h2>
